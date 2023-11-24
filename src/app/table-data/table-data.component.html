@@ -1,0 +1,23 @@
+<div class="table-section">
+  <br />
+  <h2>Student Details</h2>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Course</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let student of students">
+      <tr>
+        <td>{{ student.id }}</td>
+        <td>{{ student.name | salutaionPipe : student.gender }}</td>
+        <td>{{ student.gender }}</td>
+        <td>{{ student.course }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,40 @@
+<!-- upperCase -->
+<h1> {{head | uppercase}} </h1>
+
+<!-- lower case -->
+<h1> {{heading | lowercase}} </h1>
+
+<!-- date -->
+<h1> {{birthday | date :'medium'}} </h1>
+
+<!-- time -->
+<h1> {{birthday | date :'shortTime'}} </h1>
+
+<!-- date format -->
+<h1> {{birthday | date :'yyyy,MM,dd'}} </h1>
+
+<h1> {{birthday | date :'dd,MM,yyyy'}} </h1>
+
+<h1> {{birthday | date :'dd,MM,yyyy HH:mm:ss'}} </h1>
+
+<!-- currency -->
+<h1> {{decimalNumber | currency:'INR':'code'}} </h1>
+<h1> {{decimalNumber | currency:'INR':'symbol'}} </h1>
+
+<h1> {{decimalNumber | currency:'USD':'code'}} </h1>
+
+<h1> {{decimalNumber | currency:'USD':'symbol'}} </h1>
+<h1> {{decimalNumber | currency:'USD':'symbol':'3.1-1'}} </h1>
+
+<!-- percentage -->
+<h1> {{.25 | percent}} </h1>
+<h1>{{ .85487788 | percent:'1.2-4' }}</h1>
+
+<!-- number -->
+<h1> {{844.55855 | number : '2.1-2'}} </h1>
+
+<!-- slice -->
+<h1>{{'Happy birthday to you' | slice:0:8}} </h1>
+
+<!--json  -->
+<h2> {{contact | json}} </h2>
